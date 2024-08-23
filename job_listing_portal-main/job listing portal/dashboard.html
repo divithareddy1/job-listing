@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Listing Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="dashboard">
+        <nav class="sidebar">
+            <h2>Dashboard</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Job Listings</a></li>
+                <li><a href="#">Applications</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <header>
+                <h1>Job Listings</h1>
+                <input type="text" placeholder="Search Jobs..." class="search-bar">
+            </header>
+
+            <div class="job-filters">
+                <select>
+                    <option value="">Filter by Category</option>
+                    <option value="IT">IT</option>
+                    <option value="Finance">Finance</option>
+                    <option value="Marketing">Marketing</option>
+                </select>
+
+                <select>
+                    <option value="">Filter by Location</option>
+                    <option value="New York">New York</option>
+                    <option value="San Francisco">San Francisco</option>
+                    <option value="Remote">Remote</option>
+                </select>
+
+                <select>
+                    <option value="">Sort by</option>
+                    <option value="date">Date Posted</option>
+                    <option value="salary">Salary</option>
+                </select>
+            </div>
+
+            <div class="job-listings">
+                <div class="job-card">
+                    <h3>Software Engineer</h3>
+                    <p>Location: New York</p>
+                    <p>Category: IT</p>
+                    <p>Salary: $120,000/year</p>
+                    <button>Apply Now</button>
+                </div>
+
+                <div class="job-card">
+                    <h3>Marketing Manager</h3>
+                    <p>Location: San Francisco</p>
+                    <p>Category: Marketing</p>
+                    <p>Salary: $90,000/year</p>
+                    <button>Apply Now</button>
+                </div>
+
+                <!-- Add more job cards as needed -->
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

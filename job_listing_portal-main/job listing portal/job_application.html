@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .job-listings {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.job-card {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.job-card button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.job-card button:hover {
+    background-color: #0056b3;
+}
+    </style>
+</head>
+<body>
+    <div class="job-listings">
+        <div class="job-card">
+            <h3>Software Engineer</h3>
+            <p>Location: New York</p>
+            <p>Category: IT</p>
+            <p>Salary: $120,000/year</p>
+            <button>Apply Now</button>
+        </div>
+    
+        <div class="job-card">
+            <h3>Marketing Manager</h3>
+            <p>Location: San Francisco</p>
+            <p>Category: Marketing</p>
+            <p>Salary: $90,000/year</p>
+            <button>Apply Now</button>
+        </div>
+    </div>
+    
+</body>
+</html>

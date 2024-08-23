@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .search-filters {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .search-filters input[type="text"],
+        .search-filters select {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 30%;
+            box-sizing: border-box;
+        }
+
+        .job-listing {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .job-listing:hover {
+            background-color: #e6ffe6;
+        }
+
+        .job-title {
+            font-size: 24px;
+            margin: 0 0 10px;
+            color: #333;
+        }
+
+        .company-name {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .job-location,
+        .job-type {
+            font-size: 16px;
+            color: #777;
+        }
+
+        .job-description {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .apply-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .apply-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Job Search</h1>
+    </header>
+
+    <div class="container">
+        <div class="search-filters">
+            <input type="text" placeholder="Keyword">
+            <select>
+                <option value="">Select Job Type</option>
+                <option value="full-time">Full-Time</option>
+                <option value="part-time">Part-Time</option>
+                <option value="contract">Contract</option>
+            </select>
+            <input type="text" placeholder="Location">
+        </div>
+
+        <div class="job-listing">
+            <h2 class="job-title">Software Engineer</h2>
+            <p class="company-name">TechCorp Inc.</p>
+            <p class="job-location">Location: New York, NY</p>
+            <p class="job-type">Type: Full-Time</p>
+            <p class="job-description">TechCorp Inc. is seeking a Software Engineer with 3+ years of experience in full-stack development. The ideal candidate should be proficient in JavaScript, Python, and cloud technologies.</p>
+            <a href="software-engineer-details.html" class="apply-button">View Details</a>
+        </div>
+
+        <div class="job-listing">
+            <h2 class="job-title">Data Analyst</h2>
+            <p class="company-name">DataWorks Ltd.</p>
+            <p class="job-location">Location: San Francisco, CA</p>
+            <p class="job-type">Type: Full-Time</p>
+            <p class="job-description">DataWorks Ltd. is looking for a Data Analyst with a strong background in data visualization and statistical analysis. Experience with SQL and Python is a plus.</p>
+            <a href="data-analyst-details.html" class="apply-button">View Details</a>
+        </div>
+
+        <div class="job-listing">
+            <h2 class="job-title">Product Manager</h2>
+            <p class="company-name">Innovate Solutions</p>
+            <p class="job-location">Location: Austin, TX</p>
+            <p class="job-type">Type: Full-Time</p>
+            <p class="job-description">Innovate Solutions is seeking a Product Manager with a passion for technology and a track record of delivering successful products. Strong communication skills are essential.</p>
+            <a href="product-manager-details.html" class="apply-button">View Details</a>
+        </div>
+
+        <!-- Add more job listings here -->
+        <div class="job-listing">
+            <h2 class="job-title">UX/UI Designer</h2>
+            <p class="company-name">Creative Minds</p>
+            <p class="job-location">Location: Los Angeles, CA</p>
+            <p class="job-type">Type: Full-Time</p>
+            <p class="job-description">Creative Minds is searching for a UX/UI Designer with a strong portfolio in mobile and web design. Proficiency in design tools such as Sketch and Adobe XD is required.</p>
+            <a href="ux-ui-designer-details.html" class="apply-button">View Details</a>
+        </div>
+
+        <div class="job-listing">
+            <h2 class="job-title">Network Engineer</h2>
+            <p class="company-name">SecureNet Solutions</p>
+            <p class="job-location">Location: Seattle, WA</p>
+            <p class="job-type">Type: Full-Time</p>
+            <p class="job-description">SecureNet Solutions is looking for a Network Engineer with experience in designing and maintaining large-scale networks. Certifications such as CCNA or CCNP are preferred.</p>
+            <a href="network-engineer-details.html" class="apply-button">View Details</a>
+        </div>
+
+        <div class="job-listing">
+            <h2 class="job-title">Digital Marketing Specialist</h2>
+            <p class="company-name">MarketPro Agency</p>
+            <p class="job-location">Location: Chicago, IL</p>
+            <p class="job-type">Type: Part-Time</p>
+            <p class="job-description">MarketPro Agency is seeking a Digital Marketing Specialist with expertise in SEO, SEM, and social media marketing. Previous experience with Google Analytics is a plus.</p>
+            <a href="digital-marketing-specialist-details.html" class="apply-button">View Details</a>
+        </div>
+
+        <div class="job-listing">
+            <h2 class="job-title">Financial Analyst</h2>
+            <p class="company-name">FinanceFirst Corp.</p>
+            <p class="job-location">Location: Boston, MA</p>
+            <p class="job-type">Type: Full-Time</p>
+            <p class="job-description">FinanceFirst Corp. is looking for a Financial Analyst with experience in financial modeling and analysis. The candidate should be proficient in Excel and financial reporting tools.</p>
+            <a href="financial-analyst-details.html" class="apply-button">View Details</a>
+        </div>
+
+        <div class="job-listing">
+            <h2 class="job-title">HR Manager</h2>
+            <p class="company-name">PeoplePartners LLC</p>
+            <p class="job-location">Location: Miami, FL</p>
+            <p class="job-type">Type: Full-Time</p>
+            <p class="job-description">PeoplePartners LLC is seeking an HR Manager with strong experience in recruitment, employee relations, and performance management. PHR or SPHR certification is preferred.</p>
+            <a href="hr-manager-details.html" class="apply-button">View Details</a>
+        </div>
+
+        <div class="job-listing">
+            <h2 class="job-title">Content Writer</h2>
+            <p class="company-name">WriteRight Media</p>
+            <p class="job-location">Location: Remote</p>
+            <p class="job-type">Type: Contract</p>
+            <p class="job-description">WriteRight Media is looking for a Content Writer to produce high-quality content for blogs, websites, and social media. Strong writing skills and a portfolio of published work are required.</p>
+            <a href="content-writer-details.html" class="apply-button">View Details</a>
+        </div>
+
+        <div class="job-listing">
+            <h2 class="job-title">Project Manager</h2>
+            <p class="company-name">BuildIt Construction</p>
+            <p class="job-location">Location: Denver, CO</p>
+            <p class="job-type">Type: Full-Time</p>
+            <p class="job-description">BuildIt Construction is seeking a Project Manager with experience in managing large construction projects. PMP certification and strong leadership skills are essential.</p>
+            <a href="project-manager-details.html" class="apply-button">View Details</a>
+        </div>
+
+        <div class="job-listing">
+            <h2 class="job-title">Cybersecurity Analyst</h2>
+            <p class="company-name">CyberSafe Inc.</p>
+            <p class="job-location">Location: Washington, D.C.</p>
+            <p class="job-type">Type: Full-Time</p>
+            <p class="job-description">CyberSafe Inc. is looking for a Cybersecurity Analyst with experience in threat detection, incident response, and vulnerability management. CISSP certification is a plus.</p>
+            <a href="cybersecurity-analyst-details.html" class="apply-button">View Details</a>
+        </div>
+
+    </div>
+</body>
+
+</html>
